@@ -1,17 +1,26 @@
-
 package wholeworthsgrocery;
 
-/**
- *
- * @author Stuart
- */
-public class WholeWorthsGrocery {
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-    /**
-     * @param args the command line arguments
-     */
+//Stuart Anderson, 30056472, 18/09/2022
+
+public class WholeWorthsGrocery extends Application {
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource("WholeWorthsGroceryUI.fxml"));
+        
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        launch(args);
     }
     
 }
