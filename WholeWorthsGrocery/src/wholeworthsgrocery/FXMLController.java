@@ -51,8 +51,15 @@ public class FXMLController {
     private TextField textFieldMilkQty;
 
     @FXML
-    void handleButtonAction(ActionEvent event) {
-        labelTotalCalculated.setText("Hello Mother Fucker");
+    void buttonCalculateOnAction(ActionEvent event) {
+        int eggsQty = Integer.parseInt(textFieldEggsQty.getText());
+        int milkQty = Integer.parseInt(textFieldMilkQty.getText());
+        int breadQty = Integer.parseInt(textFieldBreadQty.getText());
+        
+        double eggsItemTotal = (eggsQty / 12 * 5.0) + (eggsQty % 12 * 0.5);
+        double milkTotal = (milkQty / 3 * 7.0) + (milkQty % )
+        
+        labelEggsItemTotal.setText(String.valueOf(eggsItemTotal));
     }
 
 }
