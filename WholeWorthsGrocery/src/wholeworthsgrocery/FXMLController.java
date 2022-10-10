@@ -34,11 +34,30 @@ public class FXMLController {
 
     @FXML
     void buttonCalculateOnAction(ActionEvent event) {
-        try {
-            int eggsQty = Integer.parseInt(textFieldEggsQty.getText());
-            int milkQty = Integer.parseInt(textFieldMilkQty.getText());
-            int breadQty = Integer.parseInt(textFieldBreadQty.getText());
+        int eggsQty;
+        int milkQty;
+        int breadQty;        
         
+        try {
+            if(!textFieldEggsQty.getText().isEmpty()) {
+                eggsQty = Integer.parseInt(textFieldEggsQty.getText());
+            }
+            else {
+                eggsQty = 0;
+            }
+            if(!textFieldMilkQty.getText().isEmpty()) {
+                milkQty = Integer.parseInt(textFieldMilkQty.getText());
+            }
+            else {
+                milkQty = 0;
+            }
+            if(!textFieldBreadQty.getText().isEmpty()) {
+                breadQty = Integer.parseInt(textFieldBreadQty.getText());
+            }
+            else {
+                breadQty = 0;
+            }
+
         double eggsItemTotal = (eggsQty / 12 * 5.0) + (eggsQty % 12 * 0.5);
         double milkItemTotal = (milkQty / 3 * 7.0) + (milkQty % 3 * 2.5);
         double breadItemTotal = (breadQty / 2 * 6.0) + (breadQty % 2 * 3.5);
