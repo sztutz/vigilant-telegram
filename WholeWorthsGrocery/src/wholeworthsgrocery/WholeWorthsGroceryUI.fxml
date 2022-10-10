@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="295.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="wholeworthsgrocery.FXMLController">
+   <children>
+      <Label fx:id="labelEggs" layoutX="23.0" layoutY="94.0" text="Eggs" />
+      <Label fx:id="labelQuantity" layoutX="107.0" layoutY="41.0" text="Quantity" />
+      <Label fx:id="labelMilk" layoutX="25.0" layoutY="160.0" text="Milk" />
+      <Label fx:id="labelBread" layoutX="21.0" layoutY="227.0" text="Bread" />
+      <Label fx:id="labelItemTotal" layoutX="205.0" layoutY="41.0" text="Item Total" />
+      <TextField fx:id="textFieldEggsQty" layoutX="98.0" layoutY="90.0" prefHeight="25.0" prefWidth="64.0" promptText="0" />
+      <TextField fx:id="textFieldMilkQty" layoutX="98.0" layoutY="156.0" prefHeight="25.0" prefWidth="64.0" promptText="0" />
+      <TextField fx:id="textFieldBreadQty" layoutX="98.0" layoutY="223.0" prefHeight="25.0" prefWidth="64.0" promptText="0" />
+      <Label fx:id="labelEggsItemTotal" layoutX="220.0" layoutY="94.0" text="\$0.0" />
+      <Label fx:id="labelMilkItemTotal" layoutX="220.0" layoutY="160.0" text="\$0.0" />
+      <Label fx:id="labelBreadItemTotal" layoutX="220.0" layoutY="227.0" text="\$0.0" />
+      <Label fx:id="labelTotalCalculated" layoutX="220.0" layoutY="304.0" text="\$0.0" />
+      <Label fx:id="labelTotal" layoutX="117.0" layoutY="304.0" text="Total" />
+      <Button fx:id="buttonCalculate" layoutX="22.0" layoutY="300.0" mnemonicParsing="false" onAction="#buttonCalculateOnAction" text="Calculate" />
+      <Separator layoutX="30.0" layoutY="278.0" prefHeight="0.0" prefWidth="217.0" />
+   </children>
+</Pane>
